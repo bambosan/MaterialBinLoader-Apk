@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path
+        name="screenshots"
+        path="../games/com.mojang/Screenshots/"/>
+    <files-path
+        name="screenshotsVr"
+        path="../games/com.mojang/vr/Screenshots/"/>
+    <files-path
+        name="screenshotsTrial"
+        path="../games/com.mojang.trial/Screenshots/"/>
+    <files-path
+        name="screenshotsVrTrial"
+        path="../games/com.mojang.trial/vr/Screenshots/"/>
+    <external-files-path
+        name="screenshotsExternal"
+        path="games/com.mojang/Screenshots"/>
+    <external-files-path
+        name="screenshotsExternalVr"
+        path="games/com.mojang/vr/Screenshots"/>
+    <external-files-path
+        name="screenshotsExternalTrial"
+        path="games/com.mojang.trial/Screenshots"/>
+    <external-files-path
+        name="screenshotsExternalVrTrial"
+        path="games/com.mojang.trial/vr/Screenshots"/>
+    <external-path
+        name="screenshotsExternalLegacy"
+        path="games/com.mojang/Screenshots"/>
+    <external-path
+        name="screenshotsExternalLegacyVr"
+        path="games/com.mojang/vr/Screenshots"/>
+    <external-path
+        name="screenshotsExternalLegacyTrial"
+        path="games/com.mojang.trial/Screenshots"/>
+    <external-path
+        name="screenshotsExternalLegacyVrTrial"
+        path="games/com.mojang.trial/vr/Screenshots"/>
+</paths>
