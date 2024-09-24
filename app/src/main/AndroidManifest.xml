@@ -58,7 +58,7 @@
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="sensorLandscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
             tools:ignore="DiscouragedApi">
             <meta-data
                 android:name="android.app.lib_name"
@@ -95,7 +95,45 @@
                 <data android:pathPattern=".*\\..*\\..*\\..*\\.mctemplate"/>
                 <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.mctemplate"/>
             </intent-filter>
+            <intent-filter>
+                <action
+                        android:name="xbox_live_game_invite" />
+                <action
+                        android:name="xbox_live_achievement_unlock" />
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+        <activity
+                android:name="com.microsoft.xal.browser.IntentHandler"
+                android:exported="true"
+                android:launchMode="singleTask"
+                android:configChanges="keyboardHidden|orientation|screenSize|uiMode"
+                android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action
+                        android:name="android.intent.action.VIEW" />
+                <data
+                        android:scheme="@string/xal_token"
+                        android:host="auth" />
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.microsoft.xal.browser.BrowserLaunchActivity"
+                android:exported="false"
+                android:launchMode="singleTask"
+                android:configChanges="keyboardHidden|orientation|screenSize|uiMode"
+                android:alwaysRetainTaskState="true" />
+        <activity
+                android:name="com.microsoft.xal.browser.WebKitWebViewController"
+                android:exported="false"
+                android:launchMode="singleTask"
+                android:configChanges="keyboardHidden|orientation|screenSize|uiMode"
+                android:alwaysRetainTaskState="true" />
         <provider
                 android:name="androidx.core.content.FileProvider"
                 android:exported="false"
