@@ -10,8 +10,8 @@ android {
         applicationId "io.bambosan.mbloader"
         minSdk 26
         targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        versionCode 11
+        versionName "1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {
             abiFilters 'arm64-v8a'
@@ -24,8 +24,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     externalNativeBuild {
         ndkBuild {
@@ -36,8 +36,6 @@ android {
 }
 
 dependencies {
-    implementation libs.firebase.iid
-    implementation libs.firebase.messaging
     implementation libs.appcompat
     implementation libs.constraintlayout
     testImplementation libs.junit
